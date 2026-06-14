@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+/.build/
+/Packages/
+.swiftpm/
+Package.resolved
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcodeproj
+*.xcworkspace
+!default.xcworkspace
+
+# Differential-test scratch output
+/tmp/
+*.tsv

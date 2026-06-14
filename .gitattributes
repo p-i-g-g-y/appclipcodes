@@ -1,0 +1,11 @@
+# Default: detect text and normalize to LF in the repo.
+* text=auto eol=lf
+
+# Apple frequency tables are binary — never normalize.
+*.data binary
+
+# Byte-exact test fixtures must keep LF endings on every platform,
+# otherwise the byte-for-byte SVG comparison fails on CRLF checkouts.
+*.svg  text eol=lf
+*.json text eol=lf
+*.sh   text eol=lf
